@@ -58,8 +58,7 @@ export function Footer({ currentLanguage }: FooterProps) {
               </span>
             </h3>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Your trusted partner for premium car rental services with professional drivers. 
-              We provide comfortable, safe, and reliable transportation solutions in Bali.
+              {t.contact.companyDesc}
             </p>
             <div className="flex items-center space-x-2 text-gray-400 text-sm">
               <Phone className="w-4 h-4" />
@@ -69,7 +68,7 @@ export function Footer({ currentLanguage }: FooterProps) {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-white">Quick Links</h4>
+            <h4 className="text-lg font-semibold text-white">{t.contact.quickLinks}</h4>
             <ul className="space-y-2">
               {quickLinks.map((link, index) => (
                 <li key={index}>
@@ -86,7 +85,7 @@ export function Footer({ currentLanguage }: FooterProps) {
 
           {/* Follow Us */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-white">Follow Us</h4>
+            <h4 className="text-lg font-semibold text-white">{t.contact.followUs}</h4>
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => {
                 const Icon = social.icon;
@@ -105,9 +104,9 @@ export function Footer({ currentLanguage }: FooterProps) {
               })}
             </div>
             <div className="mt-4 p-4 bg-gray-900 rounded-lg">
-              <h5 className="text-white font-medium mb-2">24/7 Service Available</h5>
+              <h5 className="text-white font-medium mb-2">{t.contact.available24_7}</h5>
               <p className="text-gray-400 text-sm">
-                We're always ready to serve your transportation needs
+                {t.contact.availableDesc}
               </p>
             </div>
           </div>

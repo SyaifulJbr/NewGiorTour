@@ -53,24 +53,24 @@ export function ContactSection({ currentLanguage }: ContactSectionProps) {
             </div>
 
             <div className="mt-8 p-6 bg-gray-900 rounded-lg border border-green-600">
-              <h4 className="text-lg font-semibold text-white mb-3">Business Hours</h4>
+              <h4 className="text-lg font-semibold text-white mb-3">{t.contact.businessHours}</h4>
               <div className="space-y-2 text-gray-300">
                 <div className="flex justify-between">
-                  <span>Monday - Friday</span>
-                  <span className="text-green-400">24 Hours</span>
+                  <span>{t.contact.mondayFriday}</span>
+                  <span className="text-green-400">{t.contact.hours24}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Saturday</span>
-                  <span className="text-green-400">24 Hours</span>
+                  <span>{t.contact.saturday}</span>
+                  <span className="text-green-400">{t.contact.hours24}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span>Sunday</span>
-                  <span className="text-green-400">24 Hours</span>
+                  <span>{t.contact.sunday}</span>
+                  <span className="text-green-400">{t.contact.hours24}</span>
                 </div>
               </div>
               <div className="mt-4 p-3 bg-green-900/30 rounded-lg border border-green-700">
-                <p className="text-green-400 text-sm font-medium">🌴 Bali Time Zone (WITA)</p>
-                <p className="text-gray-400 text-xs mt-1">UTC+8:00</p>
+                <p className="text-green-400 text-sm font-medium">🌴 {t.contact.baliTimeZone}</p>
+                <p className="text-gray-400 text-xs mt-1">{t.contact.utc}</p>
               </div>
             </div>
           </div>
@@ -91,27 +91,27 @@ export function ContactSection({ currentLanguage }: ContactSectionProps) {
             </div>
 
             <div className="bg-gray-900 p-6 rounded-lg">
-              <h4 className="text-lg font-semibold text-white mb-3">Service Areas</h4>
+              <h4 className="text-lg font-semibold text-white mb-3">{t.contact.serviceAreas}</h4>
               <ul className="space-y-2 text-gray-300">
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-green-600 rounded-full mr-3"></div>
-                  Denpasar & Badung Regency
+                  {t.contact.denpasar}
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-green-600 rounded-full mr-3"></div>
-                  Ngurah Rai Airport (DPS)
+                  {t.contact.airport}
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-green-600 rounded-full mr-3"></div>
-                  Kuta, Seminyak & Legian
+                  {t.contact.kutaSeminyak}
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-green-600 rounded-full mr-3"></div>
-                  Ubud, Canggu & Nusa Dua
+                  {t.contact.ubud}
                 </li>
                 <li className="flex items-center">
                   <div className="w-2 h-2 bg-green-600 rounded-full mr-3"></div>
-                  All Bali Areas Available
+                  {t.contact.allBaliAreas}
                 </li>
               </ul>
             </div>
@@ -121,8 +121,8 @@ export function ContactSection({ currentLanguage }: ContactSectionProps) {
         {/* Quick Contact Form */}
         <div className="mt-16 bg-gray-900 rounded-lg p-8 border border-green-600">
           <div className="text-center mb-8">
-            <h3 className="text-2xl font-semibold text-white mb-4">Quick Booking Inquiry</h3>
-            <p className="text-gray-300">Plan your Bali trip with us. Send us a message and we'll get back to you shortly</p>
+            <h3 className="text-2xl font-semibold text-white mb-4">{t.contact.quickBooking}</h3>
+            <p className="text-gray-300">{t.contact.quickBookingDesc}</p>
           </div>
           
           <div className="max-w-2xl mx-auto">
@@ -133,7 +133,7 @@ export function ContactSection({ currentLanguage }: ContactSectionProps) {
               className="block w-full bg-green-600 hover:bg-green-700 text-white text-center font-semibold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-105"
             >
               <MessageCircle className="w-5 h-5 inline mr-2" />
-              Start WhatsApp Conversation
+              {t.contact.startWhatsApp}
             </a>
           </div>
         </div>

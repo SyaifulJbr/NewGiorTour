@@ -49,8 +49,8 @@ export function AboutSection({ currentLanguage }: AboutSectionProps) {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-white font-semibold mb-1">Professional Drivers</h3>
-                  <p className="text-gray-400">Experienced and courteous drivers who know Bali's routes and attractions</p>
+                  <h3 className="text-white font-semibold mb-1">{t.about.professionalDrivers}</h3>
+                  <p className="text-gray-400">{t.about.professionalDriversDesc}</p>
                 </div>
               </div>
 
@@ -61,8 +61,8 @@ export function AboutSection({ currentLanguage }: AboutSectionProps) {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-white font-semibold mb-1">Fuel Included</h3>
-                  <p className="text-gray-400">All prices include fuel costs, no hidden charges for your Bali tours</p>
+                  <h3 className="text-white font-semibold mb-1">{t.about.fuelIncluded}</h3>
+                  <p className="text-gray-400">{t.about.fuelIncludedDesc}</p>
                 </div>
               </div>
 
@@ -73,8 +73,8 @@ export function AboutSection({ currentLanguage }: AboutSectionProps) {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-white font-semibold mb-1">Well-Maintained Fleet</h3>
-                  <p className="text-gray-400">Regular maintenance ensures safety and reliability for island journeys</p>
+                  <h3 className="text-white font-semibold mb-1">{t.about.wellMaintained}</h3>
+                  <p className="text-gray-400">{t.about.wellMaintainedDesc}</p>
                 </div>
               </div>
 
@@ -85,8 +85,8 @@ export function AboutSection({ currentLanguage }: AboutSectionProps) {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="text-white font-semibold mb-1">24/7 Service</h3>
-                  <p className="text-gray-400">Round-the-clock customer support for your Bali vacation needs</p>
+                  <h3 className="text-white font-semibold mb-1">{t.about.service24_7}</h3>
+                  <p className="text-gray-400">{t.about.service24_7Desc}</p>
                 </div>
               </div>
             </div>
@@ -144,8 +144,8 @@ export function AboutSection({ currentLanguage }: AboutSectionProps) {
             </div>
             
             <div className="absolute -bottom-6 -left-6 bg-green-600 text-white p-6 rounded-lg shadow-xl">
-              <div className="text-3xl font-bold mb-2">10+ Years</div>
-              <div className="text-sm">Of Excellence in Bali Car Rental Service</div>
+              <div className="text-3xl font-bold mb-2">10+ {t.about.yearsExperience}</div>
+              <div className="text-sm">{t.about.yearsExperienceDesc}</div>
             </div>
           </div>
         </div>
@@ -153,15 +153,15 @@ export function AboutSection({ currentLanguage }: AboutSectionProps) {
         <div className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
           <div className="bg-gray-900 p-8 rounded-lg">
             <div className="text-4xl font-bold text-green-600 mb-2">5000+</div>
-            <div className="text-gray-300">Happy Bali Travelers</div>
+            <div className="text-gray-300">{t.about.happyTravelers}</div>
           </div>
           <div className="bg-gray-900 p-8 rounded-lg">
             <div className="text-4xl font-bold text-green-600 mb-2">50+</div>
-            <div className="text-gray-300">Vehicle Fleet</div>
+            <div className="text-gray-300">{t.about.vehicleFleet}</div>
           </div>
           <div className="bg-gray-900 p-8 rounded-lg">
             <div className="text-4xl font-bold text-green-600 mb-2">100+</div>
-            <div className="text-gray-300">Daily Bali Tours</div>
+            <div className="text-gray-300">{t.about.dailyBaliTours}</div>
           </div>
         </div>
       </div>
