@@ -14,24 +14,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Z.ai Code Scaffold - AI-Powered Development",
-  description: "Modern Next.js scaffold optimized for AI-powered development with Z.ai. Built with TypeScript, Tailwind CSS, and shadcn/ui.",
-  keywords: ["Z.ai", "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "AI development", "React"],
-  authors: [{ name: "Z.ai Team" }],
+  title: "Gior Bali Tour - Premium Car Rental with Driver",
+  description: "Premium car rental services with professional drivers in Bali. Comfortable travel with fuel included and 24/7 support. Book your perfect Bali experience now!",
+  keywords: ["Gior Bali Tour", "Car Rental Bali", "Driver Service", "Bali Transportation", "Premium Service", "Bali Travel", "Tour Operator"],
+  authors: [{ name: "Gior Bali Tour Team" }],
   icons: {
-    icon: "https://z-cdn.chatglm.cn/z-ai/static/logo.svg",
+    icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
-    url: "https://chat.z.ai",
-    siteName: "Z.ai",
+    title: "Gior Bali Tour - Premium Car Rental with Driver",
+    description: "Your trusted partner for premium car rental services with professional drivers in Bali",
+    url: "https://gior-bali-tour.com",
+    siteName: "Gior Bali Tour",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
+    title: "Gior Bali Tour - Premium Car Rental with Driver",
+    description: "Premium car rental services with professional drivers in Bali",
   },
 };
 

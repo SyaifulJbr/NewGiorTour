@@ -119,9 +119,16 @@ export function Footer({ currentLanguage }: FooterProps) {
             <div className="text-gray-400 text-sm">
               {t.footer.copyright}
             </div>
-            <div className="flex items-center space-x-4">
+            <div className="flex items-center space-x-2">
               <span className="text-gray-400 text-sm">Powered by</span>
-              <span className="text-green-600 font-semibold text-sm">Premium Technology</span>
+              <a
+                href="https://instagram.com/gior.malik"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-green-600 hover:text-green-500 font-semibold text-sm transition-colors duration-300"
+              >
+                @GiorMalik
+              </a>
             </div>
           </div>
         </div>

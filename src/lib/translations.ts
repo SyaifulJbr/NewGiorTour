@@ -36,7 +36,7 @@ export const translations = {
       location: "Our Location"
     },
     footer: {
-      copyright: "© 2021 Premium Car Rental. All rights reserved."
+      copyright: "© 2021 Gior Bali Tour. All rights reserved."
     }
   },
   chinese: {
@@ -76,7 +76,7 @@ export const translations = {
       location: "我们的位置"
     },
     footer: {
-      copyright: "© 2021 优质租车服务。保留所有权利。"
+      copyright: "© 2021 Gior 巴厘岛之旅。版权所有。"
     }
   },
   korean: {
@@ -116,7 +116,7 @@ export const translations = {
       location: "위치"
     },
     footer: {
-      copyright: "© 2021 프리미엄 렌터카. 모든 권리 보유."
+      copyright: "© 2021 Gior 발리 투어. 모든 권리 보유."
     }
   },
   arabic: {
@@ -156,7 +156,7 @@ export const translations = {
       location: "موقعنا"
     },
     footer: {
-      copyright: "© 2021 تأجير السيارات الفاخرة. جميع الحقوق محفوظة."
+      copyright: "© 2021 جيور بالي تور. جميع الحقوق محفوظة."
     }
   },
   turkish: {
@@ -196,7 +196,7 @@ export const translations = {
       location: "Konumumuz"
     },
     footer: {
-      copyright: "© 2021 Premium Araç Kiralama. Tüm hakları saklıdır."
+      copyright: "© 2021 Gior Bali Tour. Tüm hakları saklıdır."
     }
   },
   russian: {
@@ -236,7 +236,7 @@ export const translations = {
       location: "Наше местоположение"
     },
     footer: {
-      copyright: "© 2021 Премиум аренда автомобилей. Все права защищены."
+      copyright: "© 2021 Gior Bali Tour. Все права защищены."
     }
   },
   portuguese: {
@@ -276,7 +276,7 @@ export const translations = {
       location: "Nossa Localização"
     },
     footer: {
-      copyright: "© 2021 Aluguel de Carros Premium. Todos os direitos reservados."
+      copyright: "© 2021 Gior Bali Tour. Todos os direitos reservados."
     }
   },
   indonesian: {
@@ -316,7 +316,7 @@ export const translations = {
       location: "Lokasi Kami"
     },
     footer: {
-      copyright: "© 2021 Sewa Mobil Premium. Semua hak dilindungi."
+      copyright: "© 2021 Gior Bali Tour. Semua hak dilindungi."
     }
   }
 };
