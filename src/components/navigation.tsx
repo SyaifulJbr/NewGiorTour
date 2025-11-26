@@ -73,6 +73,12 @@ export function Navigation({ currentLanguage, onLanguageChange }: NavigationProp
               {t.nav.home}
             </button>
             <button
+              onClick={() => scrollToSection('cars')}
+              className="text-gray-300 hover:text-white transition-colors"
+            >
+              {t.nav.cars}
+            </button>
+            <button
               onClick={() => scrollToSection('about')}
               className="text-gray-300 hover:text-white transition-colors"
             >
@@ -122,6 +128,12 @@ export function Navigation({ currentLanguage, onLanguageChange }: NavigationProp
                 className="block w-full text-left px-3 py-2 text-gray-300 hover:text-white hover:bg-gray-800 rounded-md"
               >
                 {t.nav.home}
+              </button>
+              <button
+                onClick={() => scrollToSection('cars')}
+                className="block w-full text-left px-3 py-2 text-gray-300 hover:text-white hover:bg-gray-800 rounded-md"
+              >
+                {t.nav.cars}
               </button>
               <button
                 onClick={() => scrollToSection('about')}

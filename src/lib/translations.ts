@@ -3,6 +3,7 @@ export const translations = {
     nav: {
       home: "Home",
       about: "About",
+      cars: "Available Cars",
       reviews: "Reviews",
       contact: "Contact",
       bookNow: "Book Now"
@@ -42,6 +43,7 @@ export const translations = {
     nav: {
       home: "首页",
       about: "关于我们",
+      cars: "可用车辆",
       reviews: "客户评价",
       contact: "联系我们",
       bookNow: "立即预订"
@@ -81,6 +83,7 @@ export const translations = {
     nav: {
       home: "홈",
       about: "소개",
+      cars: "이용 가능한 차량",
       reviews: "고객 후기",
       contact: "연락처",
       bookNow: "예약하기"
@@ -120,6 +123,7 @@ export const translations = {
     nav: {
       home: "الرئيسية",
       about: "من نحن",
+      cars: "السيارات المتاحة",
       reviews: "التقييمات",
       contact: "اتصل بنا",
       bookNow: "احجز الآن"
@@ -159,6 +163,7 @@ export const translations = {
     nav: {
       home: "Ana Sayfa",
       about: "Hakkımızda",
+      cars: "Mevcut Araçlar",
       reviews: "Yorumlar",
       contact: "İletişim",
       bookNow: "Hemen Rezervasyon Yap"
@@ -198,6 +203,7 @@ export const translations = {
     nav: {
       home: "Главная",
       about: "О нас",
+      cars: "Доступные автомобили",
       reviews: "Отзывы",
       contact: "Контакты",
       bookNow: "Забронировать"
@@ -237,6 +243,7 @@ export const translations = {
     nav: {
       home: "Início",
       about: "Sobre Nós",
+      cars: "Carros Disponíveis",
       reviews: "Avaliações",
       contact: "Contato",
       bookNow: "Reservar Agora"
@@ -276,6 +283,7 @@ export const translations = {
     nav: {
       home: "Beranda",
       about: "Tentang Kami",
+      cars: "Mobil Tersedia",
       reviews: "Ulasan",
       contact: "Kontak",
       bookNow: "Pesan Sekarang"

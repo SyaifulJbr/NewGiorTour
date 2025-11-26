@@ -1,7 +1,7 @@
 'use client';
 
 import { translations, Language } from '@/lib/translations';
-import { ChevronUp, Phone, MessageCircle, Instagram, Mail } from 'lucide-react';
+import { Phone, MessageCircle, Instagram, Mail } from 'lucide-react';
 
 interface FooterProps {
   currentLanguage: Language;
@@ -9,10 +9,6 @@ interface FooterProps {
 
 export function Footer({ currentLanguage }: FooterProps) {
   const t = translations[currentLanguage];
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
 
   const quickLinks = [
     { name: t.nav.home, href: '#home' },
@@ -50,7 +46,6 @@ export function Footer({ currentLanguage }: FooterProps) {
           <div className="space-y-4">
             <h3 
               className="text-xl font-bold cursor-pointer hover:opacity-80 transition-opacity"
-              onClick={scrollToTop}
             >
               <span className="bg-gradient-to-r from-green-500 to-green-600 bg-clip-text text-transparent">
                 Gior
@@ -132,14 +127,6 @@ export function Footer({ currentLanguage }: FooterProps) {
         </div>
       </div>
 
-      {/* Scroll to Top Button */}
-      <button
-        onClick={scrollToTop}
-        className="fixed bottom-6 right-6 p-3 bg-green-600 hover:bg-green-700 text-white rounded-full shadow-lg transition-all duration-300 z-40 hover:scale-110"
-        aria-label="Scroll to top"
-      >
-        <ChevronUp className="w-5 h-5" />
-      </button>
     </footer>
   );
 }

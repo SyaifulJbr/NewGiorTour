@@ -3,19 +3,11 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: "standalone",
   typescript: {
-    ignoreBuildErrors: true,
+    ignoreBuildErrors: false,
   },
-  reactStrictMode: false,
-  webpack: (config, { dev }) => {
-    if (dev) {
-      config.watchOptions = {
-        ignored: ["**/*"],
-      };
-    }
-    return config;
-  },
+  reactStrictMode: true,
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: false,
   },
 };
 
