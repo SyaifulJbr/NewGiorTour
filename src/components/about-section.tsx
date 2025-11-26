@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import { translations, Language } from '@/lib/translations';
 
 interface AboutSectionProps {
@@ -8,6 +9,21 @@ interface AboutSectionProps {
 
 export function AboutSection({ currentLanguage }: AboutSectionProps) {
   const t = translations[currentLanguage];
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const aboutImages = [
+    '/images/about/bali-nature.jpg',
+    '/images/about/bali-island.jpg',
+    '/images/about/bali-tari-kecak.jpg'
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % aboutImages.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <section id="about" className="py-20 bg-gray-950">
@@ -77,11 +93,56 @@ export function AboutSection({ currentLanguage }: AboutSectionProps) {
           </div>
 
           <div className="relative">
-            <img
-              src="https://images.unsplash.com/photo-1519904981063-b0cf448d479e?w=600&h=400&fit=crop"
-              alt="Premium Car Service in Bali"
-              className="rounded-lg shadow-2xl w-full h-auto"
-            />
+            {/* Image Carousel */}
+            <div className="relative h-96 overflow-hidden rounded-lg shadow-2xl group">
+              {aboutImages.map((image, index) => (
+                <div
+                  key={index}
+                  className={`absolute inset-0 transition-opacity duration-1000 ${
+                    index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+                  }`}
+                >
+                  <img
+                    src={image}
+                    alt={`Bali Experience ${index + 1}`}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ))}
+              
+              {/* Image Indicators */}
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
+                {aboutImages.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setCurrentImageIndex(index)}
+                    className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                      index === currentImageIndex
+                        ? 'bg-green-600 w-8'
+                        : 'bg-white/50 hover:bg-white/75'
+                    }`}
+                    aria-label={`Go to image ${index + 1}`}
+                  />
+                ))}
+              </div>
+              
+              {/* Navigation Arrows */}
+              <button
+                onClick={() => setCurrentImageIndex((prev) => (prev - 1 + aboutImages.length) % aboutImages.length)}
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white p-2 rounded-full z-10 opacity-0 group-hover:opacity-100 transition-opacity"
+                aria-label="Previous image"
+              >
+                ←
+              </button>
+              <button
+                onClick={() => setCurrentImageIndex((prev) => (prev + 1) % aboutImages.length)}
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/75 text-white p-2 rounded-full z-10 opacity-0 group-hover:opacity-100 transition-opacity"
+                aria-label="Next image"
+              >
+                →
+              </button>
+            </div>
+            
             <div className="absolute -bottom-6 -left-6 bg-green-600 text-white p-6 rounded-lg shadow-xl">
               <div className="text-3xl font-bold mb-2">10+ Years</div>
               <div className="text-sm">Of Excellence in Bali Car Rental Service</div>
@@ -104,6 +165,30 @@ export function AboutSection({ currentLanguage }: AboutSectionProps) {
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: scale(0.95);
+          }
+          to {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+
+        @keyframes slideInFromLeft {
+          from {
+            opacity: 0;
+            transform: translateX(-20px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+      `}</style>
     </section>
   );
 }

@@ -13,9 +13,9 @@ export function HeroSection({ currentLanguage }: HeroSectionProps) {
   const t = translations[currentLanguage];
 
   const heroImages = [
-    'https://images.unsplash.com/photo-1537953773345-d172ccf13cf1?w=1920&h=1080&fit=crop&auto=format', // Bali rice terrace
-    'https://images.unsplash.com/photo-1549580041-3bf353eb0011?w=1920&h=1080&fit=crop&auto=format', // Bali temple
-    'https://images.unsplash.com/photo-1518971408586-df8b9c5b8b0a?w=1920&h=1080&fit=crop&auto=format'  // Bali beach
+    '/images/hero/barong-statue.jpg',
+    '/images/hero/nusa-penida-beach.jpg',
+    '/images/hero/kedonganan-sunset.jpg'
   ];
 
   useEffect(() => {

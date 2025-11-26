@@ -26,7 +26,7 @@ export function CarsSection({ currentLanguage }: CarsSectionProps) {
       id: 'avanza',
       name: 'Avanza',
       price: 600000,
-      image: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=400&h=250&fit=crop',
+      image: '/images/cars/avanza.png',
       seats: 7,
       transmission: 'Manual',
       fuel: 'Petrol'
@@ -35,7 +35,7 @@ export function CarsSection({ currentLanguage }: CarsSectionProps) {
       id: 'allnew-avanza',
       name: 'Allnew Avanza',
       price: 700000,
-      image: 'https://images.unsplash.com/photo-1550355291-bbee04a92027?w=400&h=250&fit=crop',
+      image: '/images/cars/all-new-avanza.png',
       seats: 7,
       transmission: 'Automatic',
       fuel: 'Petrol'
@@ -44,7 +44,7 @@ export function CarsSection({ currentLanguage }: CarsSectionProps) {
       id: 'xpander',
       name: 'Xpander',
       price: 700000,
-      image: 'https://images.unsplash.com/photo-1542362567-b07e54358753?w=400&h=250&fit=crop',
+      image: '/images/cars/xpander.png',
       seats: 7,
       transmission: 'Automatic',
       fuel: 'Petrol'
@@ -53,7 +53,7 @@ export function CarsSection({ currentLanguage }: CarsSectionProps) {
       id: 'innova-reborn',
       name: 'Innova Reborn',
       price: 900000,
-      image: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=400&h=250&fit=crop',
+      image: '/images/cars/innova-reborn.webp',
       seats: 7,
       transmission: 'Automatic',
       fuel: 'Diesel'
@@ -62,7 +62,7 @@ export function CarsSection({ currentLanguage }: CarsSectionProps) {
       id: 'hiace-commuter',
       name: 'HiAce Commuter',
       price: 1100000,
-      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=250&fit=crop',
+      image: '/images/cars/hiace-commuter.png',
       seats: 16,
       transmission: 'Manual',
       fuel: 'Diesel'
@@ -71,7 +71,7 @@ export function CarsSection({ currentLanguage }: CarsSectionProps) {
       id: 'hiace-premio',
       name: 'HiAce Premio',
       price: 1300000,
-      image: 'https://images.unsplash.com/photo-1576941089067-2de3c901e126?w=400&h=250&fit=crop',
+      image: '/images/cars/hiace-premio.png',
       seats: 12,
       transmission: 'Automatic',
       fuel: 'Diesel'
@@ -80,7 +80,7 @@ export function CarsSection({ currentLanguage }: CarsSectionProps) {
       id: 'alphard',
       name: 'Toyota Alphard',
       price: 1700000,
-      image: 'https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?w=400&h=250&fit=crop',
+      image: '/images/cars/toyota-alphard.png.webp',
       seats: 7,
       transmission: 'Automatic',
       fuel: 'Petrol'
@@ -89,7 +89,7 @@ export function CarsSection({ currentLanguage }: CarsSectionProps) {
       id: 'vellfire',
       name: 'Toyota Vellfire',
       price: 1700000,
-      image: 'https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?w=400&h=250&fit=crop',
+      image: '/images/cars/toyota-vellfire.png',
       seats: 7,
       transmission: 'Automatic',
       fuel: 'Petrol'
@@ -124,7 +124,11 @@ export function CarsSection({ currentLanguage }: CarsSectionProps) {
                   <img
                     src={car.image}
                     alt={car.name}
-                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                    className={`w-full h-full hover:scale-110 transition-transform duration-300 ${
+                      ['avanza', 'innova-reborn', 'hiace-premio'].includes(car.id) 
+                        ? 'object-contain' 
+                        : 'object-cover'
+                    }`}
                   />
                   <div className="absolute top-2 right-2 bg-green-600 text-white px-2 py-1 rounded text-sm font-semibold">
                     {car.seats} Seats
